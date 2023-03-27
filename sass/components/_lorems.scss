@@ -1,0 +1,78 @@
+.rectangles {
+  list-style-type: none;
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 30px;
+  padding: 0px;
+
+  &__item {
+    width: 270px;
+    height: 120px;
+    background-color: $team-container-color-background;
+    border-radius: 4px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__1 {
+    margin-top: 25px;
+    width: 65.32px;
+    height: 70px;
+  }
+
+  &__2 {
+    margin-top: 25px;
+    width: 66.96px;
+    height: 70px;
+  }
+
+  &__3 {
+    margin-top: 33.2px;
+    width: 70px;
+    height: 53.69px;
+  }
+
+  &__4 {
+    margin-top: 30.23px;
+    width: 54.83px;
+    height: 60.66px;
+  }
+}
+
+.lorems {
+  width: 1200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  display: flex;
+
+  &__h {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    list-style-type: none;
+    width: 270px;
+    height: auto;
+    text-align: left;
+  }
+  &__h:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__text {
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-transform: none;
+    color: var(--third-main-text-color);
+    margin: 10px 0px 0px 0px;
+  }
+  &__text:not(:last-child) {
+    margin-right: 30px;
+  }
+}

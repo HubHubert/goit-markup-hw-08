@@ -1,0 +1,21 @@
+@import "./utils/vars";
+@import "./components/header";
+@import "./components/modal";
+@import "./components/buttons";
+@import "./components/main-image-container";
+@import "./components/lorems";
+@import "./components/whatwedo";
+@import "./components/ourteam";
+@import "./components/customers";
+@import "./components/footer";
+@import "./components/portfolio-btns";
+@import "./components/portfolio-grid";
+
+body {
+  font-family: $font-family;
+}
+.portfolio-container {
+  width: 1170px;
+  background-color: var(--acent-color-for-containers);
+  margin: 94px auto;
+}

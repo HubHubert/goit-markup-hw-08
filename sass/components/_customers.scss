@@ -1,0 +1,45 @@
+.customers {
+  width: 100%;
+  background-color: $acent-color-for-containers;
+  margin-top: 94px;
+
+  &__h {
+    font-weight: $font-thick;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+    margin: auto;
+  }
+}
+.customers-rectangles {
+  list-style-type: none;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  padding: 0px;
+
+  &__item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item:hover,
+  &__item:focus {
+    --color3: #{$second-main-text-color};
+    border-color: $second-main-text-color;
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__image {
+    width: 106px;
+    height: 60.04px;
+  }
+}

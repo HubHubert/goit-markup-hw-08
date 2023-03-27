@@ -1,0 +1,44 @@
+.third-container {
+  width: 1200px;
+  background-color: $acent-color-for-containers;
+  margin: auto;
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.secondary-h {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.images-list-1 {
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__label {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $acent-color-text;
+    background: rgba(47, 48, 58, 0.8);
+    position: relative;
+    bottom: 74px;
+    width: 370px;
+    height: 70px;
+    margin: 0;
+    padding: 27px 90px;
+  }
+}

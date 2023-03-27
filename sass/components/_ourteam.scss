@@ -1,0 +1,113 @@
+.third-container {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-container {
+  background: rgba(245, 244, 250, 1);
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.third-h {
+  font-weight: $font-thick;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+  width: 352px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.images-list-2 {
+  list-style-type: none;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.card {
+  background: $acent-color-for-containers;
+  width: 270px;
+  height: 428px;
+  margin: 0px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &__image {
+    width: 270px;
+    height: 260px;
+  }
+  &__name {
+    font-weight: $font-medium;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+  }
+  &__description {
+    font-weight: $font-thin;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: $third-main-text-color;
+  }
+}
+.list-icons {
+  list-style-type: none;
+  display: flex;
+  width: 206px;
+  height: 56px;
+  padding: 0px;
+  margin: auto;
+  margin-top: 16px;
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    background-color: $second-main-text-color;
+    --color3: #{$acent-color-text};
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__instagram {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+  &__twitter {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+  &__facebook {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+  &__linkedin {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+  }
+}

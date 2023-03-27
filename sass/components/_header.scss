@@ -1,0 +1,121 @@
+.container {
+  max-width: 1200px;
+  text-align: center;
+  margin: auto;
+}
+.page-header {
+  background: var(--acent-color-for-containers);
+  width: 100%;
+  height: 80px;
+  margin-top: 0px;
+  margin-left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-section__container-logo {
+  margin-right: 93px;
+}
+.logo {
+  color: $second-main-text-color;
+  font-family: "Raleway";
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &__piece {
+    color: $main-text-color;
+  }
+  &__piece--reverse {
+    color: $acent-color-text;
+  }
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 32px;
+  margin-right: 330px;
+  height: 48px;
+
+  &__item:not(:last-child) {
+    margin-right: 46px;
+  }
+  &__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $second-main-text-color;
+  }
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  background-color: $second-main-text-color;
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  top: 42px;
+  fill: solid;
+}
+
+.contact {
+  display: flex;
+  width: fit-content;
+
+  &__links {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $third-main-text-color;
+    width: fit-content;
+    display: flex;
+    text-align: center;
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__links:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__links:hover,
+  &__links:focus {
+    color: $second-main-text-color;
+    --color1: #{$second-main-text-color};
+  }
+  &__icon--elvelope {
+    width: 16px;
+    height: 12px;
+    margin-top: 2px;
+    margin-right: 10px;
+  }
+  &__icon--smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+}
